@@ -95,6 +95,8 @@ services:
         - workspace
       extra_hosts:
         - "dockerhost:${DOCKER_HOST_IP}"
+        - "api.xplorasia.dev:172.26.0.7"
+        - "wp.xplorasia.dev:172.26.0.7"
       environment:
         - PHP_IDE_CONFIG=${PHP_IDE_CONFIG}
       networks:
